@@ -71,7 +71,7 @@ def multi_threaded_client(client):
                         if not bytes_read:
                             break
                         f.write(bytes_read)
-                        print(f"Recieved {read} out of {size} of the {filename}")
+                        # print(f"Recieved {read} out of {size} of the {filename}")
                         if read == size:
                             break
                 print("File Has Been Recived successfully!")
@@ -95,7 +95,7 @@ def multi_threaded_client(client):
                         if not bytes_read:
                             break
                         client.sendall(bytes_read)
-                        print(f"Sent {send} out of {size} of the {operation}")
+                        # print(f"Sent {send} out of {size} of the {operation}")
                         if send == size:
                             break
                 print("File Has Been Sent successfully!")
